@@ -46,7 +46,7 @@ namespace TLSharp.Tests
 			await client.Connect();
 
 			var hash = await client.SendCodeRequest(NumberToAuthenticate);
-			var code = "93463"; // you can change code in debugger
+			var code = "36519"; // you can change code in debugger
 
 			var user = await client.MakeAuth(NumberToAuthenticate, hash, code);
 

@@ -18,8 +18,8 @@ namespace TLSharp.Core
 		private MtProtoSender _sender;
 		private AuthKey _key;
 		private TcpTransport _transport;
-		private string _apiHash = "a2514f96431a228e4b9ee473f6c51945";
-		private int _apiId = 19474;
+		private string _apiHash = "25201815dccb4dec31c0b8eb6b4e61a5";
+		private int _apiId = 23262;
 		private Session _session;
 		private List<DcOption> dcOptions; 
 
