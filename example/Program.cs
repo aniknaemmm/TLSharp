@@ -41,14 +41,12 @@ namespace example
             await client.Connect();
             var hash = await client.SendCodeRequest("375257307554");
             var code = "70342"; // you can change code in debugger
-            int n;
             var t = Console.ReadLine();
             code = t;
             var user = await client.MakeAuth("375257307554", hash, code);
             Console.WriteLine("fdfdfdfd");
 
-            var userByPhoneId = await client.ImportContactByPhoneNumber("375299969274");
-            //int id =(int)userByUserNameId;
+            var userByPhoneId = await client.ImportContactByPhoneNumber("375293088998");
             await client.SendMessage(userByPhoneId.Value, "Hello Habr!");
             Assert.IsNotNull(user);
 
